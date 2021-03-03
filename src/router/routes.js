@@ -41,5 +41,17 @@ export default [
         meta: { auth: true }
       }
     ]
+  },
+  {
+    path: '/articles/create',
+    name: 'Create',
+    component: () => import('@/views/articles/Create'),
+    meta: { auth: true }
+  },
+  // Content
+  {
+    path: '/articles/:articleId/content',
+    name: 'Content',
+    component: () => import('@/views/articles/Content.vue')
   }
 ]
